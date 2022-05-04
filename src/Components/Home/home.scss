@@ -1,0 +1,31 @@
+@import "../../styles/partials/Variables.scss";
+@import '../../Styles/partials/Mixins.scss';
+
+.home {
+    @include flexBox(column);
+    color: $white;
+    &__title{
+        font-size: $fon-size-xl;
+        line-height: 5rem;
+        font-weight: 100;
+        letter-spacing: 0.31rem;
+        margin: 0;
+        padding: 0;
+    }
+    &__subtitle {
+        font-size: $fon-size-md;
+        line-height: 5rem;
+        font-weight: bold;
+        letter-spacing: 0.31rem;
+        margin: 0;
+        padding: 0;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: $fon-size-sm;
+        line-height: 1.1875rem;
+        text-align: center;
+        width: 28rem;
+    }
+}
+
