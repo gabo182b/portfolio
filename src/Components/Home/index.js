@@ -1,11 +1,9 @@
 import React from 'react'
-import { Navbar } from '../Navbar'
 import './home.scss'
 
 const Home = () => {
     return (
         <div>
-            <Navbar />
             <section className='home'>
                 <h1 className='home__title'>GABRIEL ROJAS</h1>
                 <h2 className='home__subtitle'>Developer</h2>
