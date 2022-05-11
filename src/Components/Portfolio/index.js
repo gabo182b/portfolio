@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Portfolio = () => {
-    return (
-        <h1>Portfolio</h1>
-    )
-}
+  return (
+    <section>
+      <h1>Portfolio</h1>
+    </section>
+  );
+};
 
-export { Portfolio }
+export { Portfolio };
