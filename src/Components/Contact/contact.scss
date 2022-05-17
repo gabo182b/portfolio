@@ -1,0 +1,18 @@
+@import "../../styles/partials/Variables.scss";
+@import '../../Styles/partials/Mixins.scss';
+
+.form-section {
+    @include flexBox(column);
+    &__form {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        gap: 0.5rem;
+    }
+    &__form-label {
+        text-align: center;
+        margin-top: 0.3rem;
+    }
+    &__form-input--message {
+        width: 20rem;
+    }
+}

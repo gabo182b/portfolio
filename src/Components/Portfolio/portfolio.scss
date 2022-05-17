@@ -1,0 +1,21 @@
+@import "../../styles/partials/Variables.scss";
+@import '../../Styles/partials/Mixins.scss';
+ 
+.portfolio-section {
+    //@include flexBox(column);
+    &__gallery{
+        display: grid;
+        gap: 1rem;
+        align-items: center;
+        grid-auto-rows: 10rem;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        justify-items: center
+    }
+    &__gallery-item {
+        @include flexBox(column);
+        background: rebeccapurple;
+        width: 10rem;
+        height: 10rem;
+        margin: 0.5rem;
+    }
+}
