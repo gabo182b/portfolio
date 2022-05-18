@@ -2,7 +2,11 @@
 @import '../../Styles/partials/Mixins.scss';
  
 .portfolio-section {
-    //@include flexBox(column);
+    @include flexBox(column);
+    &__title {
+        color: $white;
+        margin: 0 0 1rem 0;
+    }
     &__gallery{
         display: grid;
         gap: 1rem;

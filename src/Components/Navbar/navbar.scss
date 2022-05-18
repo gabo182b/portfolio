@@ -4,8 +4,10 @@
 .navbar {
     @include flexBox(row);
     padding: 1rem;
-    background: none;
+    background: rebeccapurple;
     font-size: $fon-size-sm;
+    margin: 0 0 1rem 0;
+    padding: 0;
     &__links {
         @include flexBox(row);
     }
@@ -16,6 +18,7 @@
     &__link a {
         text-decoration: none;
         line-height: 1.1875rem;
+        color: $white;
     }
 
 

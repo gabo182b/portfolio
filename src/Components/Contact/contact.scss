@@ -3,7 +3,9 @@
 
 .form-section {
     @include flexBox(column);
+    margin: 2rem 0 0 0;
     &__form {
+        color:$white;
         display: grid;
         grid-template-columns: max-content max-content;
         gap: 0.5rem;
@@ -13,6 +15,9 @@
         margin-top: 0.3rem;
     }
     &__form-input--message {
-        width: 20rem;
+        width: 11rem;
+    }
+    &__submit-btn {
+        margin: 1rem 0 0 0;
     }
 }

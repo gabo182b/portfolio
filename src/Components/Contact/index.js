@@ -50,8 +50,8 @@ const Contact = () => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <input type="submit" />
       </form>
+      <button className="form-section__submit-btn">Submit</button>
     </section>
   );
 };
