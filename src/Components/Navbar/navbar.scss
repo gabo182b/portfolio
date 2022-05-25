@@ -2,12 +2,20 @@
 
 .navbar {
     @include flexBox(row);
-    padding: 1rem;
+    height: 5rem;
+    width: 100%;
     background: rebeccapurple;
     font-size: $fon-size-sm;
     margin: 0 0 1rem 0;
-    padding: 0;
+    position: sticky;
     z-index: 1;
+    &__burger-icon{
+        color: $white;
+        height: 2.5rem;
+        width: 2.2rem;
+        margin-left: auto;
+        margin-right: 2rem;
+    }
     &__links {
         @include flexBox(row);
     }
@@ -20,6 +28,13 @@
         line-height: 1.1875rem;
         color: $white;
     }
+}
 
-
+@include tablet{
+    .navbar{
+        transition: 0.8s all ease;
+    }
+    .navbar__links {
+        display: none;
+    }
 }
