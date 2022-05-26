@@ -3,12 +3,14 @@
 .navbar {
     @include flexBox(row);
     height: 5rem;
+    //margin-top: -80px;
     width: 100%;
     background: rebeccapurple;
     font-size: $fon-size-sm;
-    margin: 0 0 1rem 0;
     position: sticky;
+    top: 0;
     z-index: 1;
+    overflow: auto;
     &__burger-icon{
         color: $white;
         height: 2.5rem;
