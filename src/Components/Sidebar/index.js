@@ -1,7 +1,7 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 //import { NavLink } from "react-router-dom";
-import { Link } from "react-scroll/modules";
+import { Link } from "react-scroll";
 import "./sidebar.scss";
 const Sidebar = (props) => {
   const { isOpen, toggle } = props;
@@ -10,22 +10,50 @@ const Sidebar = (props) => {
       <FaTimes className="aside__close-icon" />
       <ul className="aside__links">
         <li className="aside__link">
-          <Link to="/" onClick={toggle}>
+          <Link
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={toggle}
+          >
             Home
           </Link>
         </li>
         <li className="aside__link">
-          <Link to="/about" onClick={toggle}>
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            onClick={toggle}
+          >
             About
           </Link>
         </li>
         <li className="aside__link">
-          <Link to="/portfolio" onClick={toggle}>
+          <Link
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={toggle}
+          >
             Portfolio
           </Link>
         </li>
         <li className="aside__link">
-          <Link to="/contact" onClick={toggle}>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={toggle}
+          >
             Contact
           </Link>
         </li>

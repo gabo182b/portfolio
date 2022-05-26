@@ -2,7 +2,7 @@ import React from "react";
 import "./about.scss";
 const About = () => {
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
       <p className="about-section__info">
         I am a frontend junior developer with a great creativity and attention
         to detail, I like teamwork to carry out faster and better problem
