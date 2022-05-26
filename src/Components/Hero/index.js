@@ -15,9 +15,11 @@ const Hero = () => {
           type="video/mp4"
         ></video>
       </div>
-      <h1 className="hero__title">GABRIEL ROJAS</h1>
-      <h2 className="hero__subtitle">Developer</h2>
-      <img className="hero__image" alt="gabriel rojas" />
+      <div className="hero__info">
+        <h1 className="hero__title">GABRIEL ROJAS</h1>
+        <h2 className="hero__subtitle">Developer</h2>
+        <img className="hero__image" alt="gabriel rojas" />
+      </div>
     </section>
   );
 };
