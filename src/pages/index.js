@@ -3,6 +3,8 @@ import { About } from "../Components/About";
 import { Hero } from "../Components/Hero";
 import { Navbar } from "../Components/Navbar";
 import { Sidebar } from "../Components/Sidebar";
+import { Portfolio } from "../Components/Portfolio";
+import { Contact } from "../Components/Contact";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +17,8 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <Hero />
       <About />
+      <Portfolio />
+      <Contact />
     </>
   );
 };
