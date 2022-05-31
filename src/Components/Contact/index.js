@@ -9,7 +9,7 @@ const Contact = () => {
     e.preventDefault();
   };
   return (
-    <section className="form-section">
+    <section className="form-section" id="contact">
       <form className="form-section__form" onSubmit={handleSubmit}>
         <label className="form-section__form-label" htmlFor="name">
           Name

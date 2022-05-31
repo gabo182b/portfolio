@@ -1,5 +1,4 @@
-@import "../../styles/partials/Variables.scss";
-@import '../../Styles/partials/Mixins.scss';
+@import "../../styles/partials/Global.scss";
 
 .form-section {
     @include flexBox(column);
