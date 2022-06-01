@@ -1,0 +1,14 @@
+@import "../../styles/partials/Global.scss";
+
+.footer {
+    @include flexBox(column);
+    color: $white;
+    &__list {
+    @include flexBox(row);
+    color: $white
+    }
+    &__list-item {
+        list-style: none;
+        margin: 0 1rem;
+    }
+}
