@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll/modules";
 import { FaBars } from "react-icons/fa";
 import "./navbar.scss";
@@ -11,17 +10,46 @@ const Navbar = (props) => {
       <FaBars className="navbar__burger-icon" onClick={toggle} />
       <ul className="navbar__links">
         <li className="navbar__link">
-          <NavLink to="/">Home</NavLink>
+          <Link
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+          >
+            Home
+          </Link>        </li>
+        <li className="navbar__link">
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+          >
+            About
+          </Link>
         </li>
         <li className="navbar__link">
-          <NavLink to="/about">About</NavLink>
-        </li>
+          <Link
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+          >
+            Portfolio
+          </Link>        </li>
         <li className="navbar__link">
-          <NavLink to="/portfolio">Portfolio</NavLink>
-        </li>
-        <li className="navbar__link">
-          <NavLink to="/contact">Contact</NavLink>
-        </li>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+          >
+            Contact
+          </Link>        </li>
       </ul>
     </nav>
   );
