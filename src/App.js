@@ -1,9 +1,10 @@
-import { MainContainer } from './Containers/MainContainer'
-import './Styles/Common.scss'
+import { Home } from './pages/Home';
 
 function App() {
   return (
-    <MainContainer />
+    <div className='App'>
+      <Home />
+    </div>
   )
 }
 
