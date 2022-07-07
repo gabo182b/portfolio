@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors, fontSizes } from "./variables";
 
 export const HeroContainer = styled.section`
     background: #0c0c0c;
@@ -31,50 +32,56 @@ export const VideoBackground = styled.video`
     background: #232a34;
 `;
 
-export const HeroContent = styled.div`  
-    max-width: 75rem;
-    position: absolute;
-    padding: 0.5rem 1.5rem;
+export const HeroContent = styled.div` 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
+    position: absolute;
+    margin-top: -10rem;
 `;
 
 export const HeroTitle = styled.h1`
-    color: #fff;
-    font-size: 3rem;
+    color: ${colors.white};
+    font-size: ${fontSizes.sizeXl};
     text-align: center;
+    margin: 0 0 5rem 0;
 
-    @media screen and (max-width: 768px) {
+    /* @media screen and (max-width: 768px) {
         font-size: 2.5rem;
     }
 
     @media screen and (max-width: 480px) {
         font-size: 2rem;
-    }
+    } */
 `;
 
 export const HeroSubtitle = styled.h2`
-    color: #fff;
-    font-size: 1.5rem;
+    color: ${colors.white};
+    font-size: ${fontSizes.sizeLg};
     text-align: center;
+    margin: 0 0 5rem 0;
 
-    @media screen and (max-width: 768px) {
+    /* @media screen and (max-width: 768px) {
         font-size: 1.25rem;
     }
 
     @media screen and (max-width: 480px) {
         font-size: 1rem;
-    }
+    } */
 `;
 
+export const HeroImageContainer = styled.div`
+    border: 0.1rem ${colors.white} solid;
+    border-radius: 50%;
+    overflow: hidden;
+`
+
 export const HeroImage = styled.figure`
-    width: 2rem;
-    height: 2rem;
+
 `;
 
 export const Image = styled.img`
-    width: 2rem;
-    height: 2rem;
+    width: 6rem;
+    height: 6rem;
 
 `
