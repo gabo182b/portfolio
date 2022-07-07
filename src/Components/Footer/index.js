@@ -1,37 +1,39 @@
 import React from "react";
 import { FaTwitter, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
-import "./footer.scss";
+import { FooterContainer, FooterList, FooterLink, Link, FooterTextContainer, FooterText } from "./FooterElements";
 
 const Footer = () => {
   const year = new Date().getFullYear();
+
   return (
-    <footer className="footer">
-      <ul className="footer__list">
-        <li className="footer__list-item">
-          <a href="/" target="_blank" aria-label="Twitter">
-            <FaTwitter />
-          </a>
-        </li>
-        <li className="footer__list-item">
-          <a href="/" target="_blank" aria-label="Instagram">
-            <FaInstagram />
-          </a>
-        </li>
-        <li className="footer__list-item">
-          <a href="/" target="_blank" aria-label="Linked in">
+    <FooterContainer>
+      <FaLinkedin />
+      <FooterList>
+        <FooterLink>
+          <Link href='/' target="_blank" aria-label="Twitter">
             <FaLinkedin />
-          </a>
-        </li>
-        <li className="footer__list-item" target="_blank" aria-label="Github">
-          <a href="/" target="_blank" aria-label="Github">
+          </Link>
+        </FooterLink>
+        <FooterLink>
+          <Link href='/' target="_blank" aria-label="Twitter">
             <FaGithub />
-          </a>
-        </li>
-      </ul>
-      <div className="footer__rights">
-        <p>© Gabriel Rojas {year}</p>
-      </div>
-    </footer>
+          </Link>
+        </FooterLink>
+        <FooterLink>
+          <Link href='/' target="_blank" aria-label="Twitter">
+            <FaInstagram />
+          </Link>
+        </FooterLink>
+        <FooterLink>
+          <Link href='/' target="_blank" aria-label="Twitter">
+            <FaTwitter />
+          </Link>
+        </FooterLink>
+      </FooterList>
+      <FooterTextContainer>
+        <FooterText>© Gabriel Rojas {year}</FooterText>
+      </FooterTextContainer>
+    </FooterContainer>
   );
 };
 

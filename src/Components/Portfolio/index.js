@@ -1,16 +1,17 @@
 import React from "react";
-import { Project } from "../Project";
+import { Project } from "../Project/index";
 import { projectOne } from "../Project/data";
-import "./portfolio.scss";
+import { PortfolioContainer, PortfolioWrapper, Gallery } from "./PortfolioElements";
 
 const Portfolio = () => {
   return (
-    <section className="portfolio-section" id="portfolio">
-      <h2 className="portfolio-section__title">Projects</h2>
-      <div className="portfolio-section__gallery">
-        <Project className="portfolio-section__gallery-item" {...projectOne} />
-      </div>
-    </section>
+    <PortfolioContainer id="portfolio">
+      <PortfolioWrapper>
+        <Gallery>
+          <Project {...projectOne} />
+        </Gallery>
+      </PortfolioWrapper>
+    </PortfolioContainer>
   );
 };
 

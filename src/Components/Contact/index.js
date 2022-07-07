@@ -1,58 +1,54 @@
 import React, { useState } from "react";
-import "./contact.scss";
+import { FormSection, FormWrapper, Form, FormLabel, FormInput, FormTextarea, FormButton } from './ContactElements'
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [mail, setMail] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
   return (
-    <section className="form-section" id="contact">
-      <form className="form-section__form" onSubmit={handleSubmit}>
-        <label className="form-section__form-label" htmlFor="name">
-          Name
-        </label>
-        <input
-          className="form-section__form-input--name"
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Nombre"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <label className="form-section__form-label" htmlFor="email">
-          email
-        </label>
-        <input
-          className="form-section__form-input--mail"
-          type="text"
-          id="email"
-          name="email"
-          required
-          placeholder="email"
-          value={mail}
-          onChange={(e) => setMail(e.target.value)}
-        />
-        <label className="form-section__form-label" htmlFor="message">
-          Message
-        </label>
-        <textarea
-          className="form-section__form-input--message"
-          id="message"
-          name="message"
-          rows={5}
-          cols={5}
-          required
-          placeholder="Write your message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
-      </form>
-      <button className="form-section__submit-btn">Submit</button>
-    </section>
+    <FormSection id="contact">
+      <FormWrapper>
+        <Form onSubmit={handleSubmit}>
+          <FormLabel htmlFor="name">Name</FormLabel>
+          <FormInput
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Nombre"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <FormLabel htmlFor="email">email</FormLabel>
+          <FormInput
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="email"
+            value={mail}
+            onChange={(e) => setMail(e.target.value)}
+          />
+          <FormLabel htmlFor="message">Message</FormLabel>
+          <FormTextarea
+            className="form-section__form-input--message"
+            id="message"
+            name="message"
+            rows={5}
+            cols={5}
+            required
+            placeholder="Write your message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+        </Form>
+        <FormButton>Submit</FormButton>
+      </FormWrapper>
+    </FormSection>
+
   );
 };
 

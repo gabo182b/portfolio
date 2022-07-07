@@ -1,17 +1,17 @@
 import React from "react";
-import "./project.scss";
-const Project = (props) => {
-  const { img, title, description } = props;
+import { ProjectCard, ProjectImage, Image, ProjectTitle, ProjectDescription, ProjectLinks } from './ProjectElements';
+
+const Project = ({ img, title, description }) => {
 
   return (
-    <article className="card">
-      <div className="card__image">
-        <img src={img} alt="project" />
-      </div>
-      <h3 className="card_title">{title}</h3>
-      <p className="card_description">{description}</p>
-      <div className="card__links"></div>
-    </article>
+    <ProjectCard>
+      <ProjectImage>
+        <Image src={img} />
+      </ProjectImage>
+      <ProjectTitle>{title}</ProjectTitle>
+      <ProjectDescription>{description}</ProjectDescription>
+      {/* <ProjectLinks></ProjectLinks> */}
+    </ProjectCard>
   );
 };
 
