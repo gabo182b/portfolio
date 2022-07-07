@@ -1,6 +1,6 @@
 import React from "react";
 import Video from '../../assets/video/galaxy.mp4';
-import { HeroContainer, HeroBackground, VideoBackground, HeroContent, HeroTitle, HeroSubtitle, HeroImage, Image } from '../../styled-components/HeroElements';
+import { HeroContainer, HeroBackground, VideoBackground, HeroContent, HeroTitle, HeroSubtitle, HeroImageContainer, HeroImage, Image } from '../../styled-components/HeroElements';
 import image from '../../assets/images/gabriel.jpg';
 
 const Hero = () => {
@@ -11,10 +11,12 @@ const Hero = () => {
       </HeroBackground>
       <HeroContent>
         <HeroTitle>Gabriel Rojas</HeroTitle>
-        <HeroSubtitle>Frontend Developer</HeroSubtitle>
-        <HeroImage>
-          <Image src={image} alt='Gabriel Rojas' />
-        </HeroImage>
+        <HeroSubtitle>Developer</HeroSubtitle>
+        <HeroImageContainer>
+          <HeroImage>
+            <Image src={image} alt='Gabriel Rojas' />
+          </HeroImage>
+        </HeroImageContainer>
       </HeroContent>
     </HeroContainer>
   );
