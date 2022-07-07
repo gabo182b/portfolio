@@ -1,6 +1,6 @@
 import React from "react";
 import Video from '../../assets/video/galaxy.mp4';
-import { HeroContainer, HeroBackground, VideoBackground, HeroContent, HeroTitle, HeroSubtitle, HeroImage, Image } from './HeroElements';
+import { HeroContainer, HeroBackground, VideoBackground, HeroContent, HeroTitle, HeroSubtitle, HeroImage, Image } from '../../styled-components/HeroElements';
 import image from '../../assets/images/gabriel.jpg';
 
 const Hero = () => {

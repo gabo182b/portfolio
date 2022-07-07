@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectCard, ProjectImage, Image, ProjectTitle, ProjectDescription, ProjectLinks } from './ProjectElements';
+import { ProjectCard, ProjectImage, Image, ProjectTitle, ProjectDescription, ProjectLinks } from '../../styled-components/ProjectElements';
 
 const Project = ({ img, title, description }) => {
 

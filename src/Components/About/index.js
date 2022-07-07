@@ -1,5 +1,6 @@
 import React from "react";
-import { AboutContainer, AboutWrapper, AboutInfo } from "./AboutElements";
+import { AboutContainer, AboutWrapper, AboutInfo } from "../../styled-components/AboutElements";
+
 
 const About = () => {
   return (

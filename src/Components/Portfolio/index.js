@@ -1,7 +1,7 @@
 import React from "react";
 import { Project } from "../Project/index";
 import { projectOne } from "../Project/data";
-import { PortfolioContainer, PortfolioWrapper, Gallery } from "./PortfolioElements";
+import { PortfolioContainer, PortfolioWrapper, Gallery } from "../../styled-components/PortfolioElements";
 
 const Portfolio = () => {
   return (

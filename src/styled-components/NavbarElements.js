@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-scroll/modules";
-import { fontSizes, colors } from "../../Styles/variables";
+import { fontSizes, colors } from "./variables";
 
 export const Nav = styled.nav`
     background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};

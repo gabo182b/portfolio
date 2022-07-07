@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
-import { Nav, NavbarContainer, BurgerMenu, NavMenu, NavItem, NavLink } from "./NavbarElements";
+import { Nav, NavbarContainer, BurgerMenu, NavMenu, NavItem, NavLink } from "../../styled-components/NavbarElements";
 
 const Navbar = ({ toggleSidebar }) => {
   const [scrollNav, setScrollNav] = useState(false)
