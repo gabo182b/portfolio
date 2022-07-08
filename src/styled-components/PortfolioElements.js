@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { colors, fontSizes } from "./variables";
+
 
 export const PortfolioContainer = styled.section`
-    color: #fff;
-    background: #000;
+    background: ${colors.backgroundColor};
 `
 
 export const PortfolioWrapper = styled.div`

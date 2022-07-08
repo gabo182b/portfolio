@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-scroll/modules";
-import { fontSizes, colors } from "./variables";
+import { fontSizes } from "./variables";
 
 export const Nav = styled.nav`
     background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
@@ -9,7 +9,6 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 3;
@@ -17,7 +16,7 @@ export const Nav = styled.nav`
     @media screen and (max-width: 960px){
         transition: 0.8s all ease;
     }
-`;
+`
 
 export const NavbarContainer = styled.div`
     display: flex;
@@ -26,7 +25,7 @@ export const NavbarContainer = styled.div`
     width: 100%;
     padding: 0 1.5rem;
     max-width: 68.75rem;
-`;
+`
 
 export const BurgerMenu = styled.div`
     display: none;
@@ -43,7 +42,7 @@ export const BurgerMenu = styled.div`
         font-size: 4rem;
         cursor: pointer;
     }
-`;
+`
 
 export const NavMenu = styled.ul`
     display: flex;
@@ -56,15 +55,15 @@ export const NavMenu = styled.ul`
         display: none;
        
     }
-`;
+`
 
 export const NavItem = styled.li`
     height: 5rem;
-`;
+`
 
 export const NavLink = styled(Link)`
     color: #fff;
-    font-size: 2rem;
+    font-size: ${fontSizes.sizeMd};
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -74,5 +73,5 @@ export const NavLink = styled(Link)`
 
     &.active {
         border-bottom: 3px solid #fff;
-}
+    }
 `

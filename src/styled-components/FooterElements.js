@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { colors, fontSizes } from "./variables";
 
 export const FooterContainer = styled.footer`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 5rem;
+    height: 6.5rem;
     background: rebeccapurple;
     padding: 3rem 1.5rem 3rem 1.5rem;
     max-width: 68.75rem;
@@ -26,7 +27,7 @@ export const FooterLink = styled.li`
 
 export const Link = styled.a`
     text-decoration: none;
-    font-size: 2rem;
+    font-size: ${fontSizes.sizeLg};
     color: #fff;
 `
 
@@ -37,6 +38,8 @@ export const FooterTextContainer = styled.div`
 `
 
 export const FooterText = styled.p`
+    font-size: ${fontSizes.sizeSm};
+    margin: 0.5rem 0 0.5rem 0;
     text-align: center;
     
 `
