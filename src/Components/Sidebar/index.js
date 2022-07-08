@@ -1,7 +1,7 @@
 import React from "react";
 //import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
-import { SidebarContainer, Icon, CloseIcon, SidebarMenu, SidebarLink } from './SidebarElements'
+import { SidebarContainer, Icon, CloseIcon, SidebarMenu, SidebarLink } from '../../styled-components/SidebarElements'
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
@@ -10,16 +10,48 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         <CloseIcon />
       </Icon>
       <SidebarMenu>
-        <SidebarLink to="home" onClick={toggleSidebar}>
+        <SidebarLink
+          to="home"
+          onClick={toggleSidebar}
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact='true'
+          offset={-80}
+        >
           Home
         </SidebarLink>
-        <SidebarLink to="about" onClick={toggleSidebar}>
+        <SidebarLink
+          to="about"
+          onClick={toggleSidebar}
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact='true'
+          offset={-80}
+        >
           About
         </SidebarLink>
-        <SidebarLink to="portfolio" onClick={toggleSidebar}>
+        <SidebarLink
+          to="portfolio"
+          onClick={toggleSidebar}
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact='true'
+          offset={-80}
+        >
           Portfolio
         </SidebarLink>
-        <SidebarLink to="contact" onClick={toggleSidebar}>
+        <SidebarLink
+          to="contact"
+          onClick={toggleSidebar}
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact='true'
+          offset={-80}
+        >
           Contact
         </SidebarLink>
       </SidebarMenu>

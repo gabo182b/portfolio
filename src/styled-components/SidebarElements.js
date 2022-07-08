@@ -1,22 +1,24 @@
 import styled from "styled-components";
 import { Link } from "react-scroll/modules";
 import { FaTimes } from "react-icons/fa";
+import { colors, fontSizes } from "./variables";
+
 
 
 export const SidebarContainer = styled.aside`
-position: fixed;
-width: 100%;
-height: 100%;
-background: #0d0d0d;
-display: grid;
-align-items: center;
-top: 0;
-left: 0;
-transition: 0.3s ease-in-out;
-opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
-z-index: 20;
-`;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: ${colors.backgroundColor};
+    display: grid;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+    z-index: 20;
+`
 
 export const Icon = styled.div`
     position: absolute;
