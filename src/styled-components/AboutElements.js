@@ -1,17 +1,18 @@
 import styled from "styled-components";
+import { colors, fontSizes } from "./variables";
 
 export const AboutContainer = styled.section`
-    color: #fff;
-    background: rebeccapurple;
+    background: ${colors.backgroundColor};
+    //margin: -0.1rem 0;
 
     /* @media screen and (max-width: 768px){
         padding: 0;
     } */
-`;
-
+`
 
 export const AboutWrapper = styled.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 1;
@@ -19,11 +20,28 @@ export const AboutWrapper = styled.div`
     height: 860px;
     width: 100%;
     max-width: 68.75rem;
-    padding: 0 1.5rem;
+    padding: 0 2rem 0 2rem;
 
 `
+
 export const AboutInfo = styled.p`
+    color: ${colors.white} ;
     text-align: justify;
-    width: 20rem;
-    font-size: 1rem
+    width: 30rem;
+    font-size: ${fontSizes.sizeMd};
+`
+
+export const ResumeContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem 0 0 0;
+`
+
+export const Resume = styled.a`
+    color: ${colors.white} ;
+    text-decoration: none;
+    text-align: center;
+    font-size: ${fontSizes.sizeMd};
 `
