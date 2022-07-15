@@ -28,7 +28,7 @@ export const FooterLink = styled.li`
 export const Link = styled.a`
     text-decoration: none;
     font-size: ${fontSizes.sizeLg};
-    color: #fff;
+    color: ${colors.white};
 `
 
 export const FooterTextContainer = styled.div`

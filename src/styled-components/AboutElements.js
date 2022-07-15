@@ -3,6 +3,10 @@ import { colors, fontSizes } from "./variables";
 
 export const AboutContainer = styled.section`
     background: ${colors.backgroundColor};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     //margin: -0.1rem 0;
 
     /* @media screen and (max-width: 768px){

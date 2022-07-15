@@ -3,6 +3,10 @@ import { colors, fontSizes } from "./variables";
 
 export const FormSection = styled.section`
     background: ${colors.backgroundColor};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 `
 
 export const FormWrapper = styled.div`

@@ -4,6 +4,10 @@ import { colors, fontSizes } from "./variables";
 
 export const PortfolioContainer = styled.section`
     background: ${colors.backgroundColor};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 `
 
 export const PortfolioWrapper = styled.div`
@@ -19,6 +23,15 @@ export const PortfolioWrapper = styled.div`
 `
 
 export const Gallery = styled.div`
+    /* width: 100%;
     display: grid;
-    gap:1rem;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    justify-content: center; 
+    align-items: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 `
