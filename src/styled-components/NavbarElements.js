@@ -58,7 +58,8 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
-    height: 5rem;
+    //height: 5rem;
+    height: 80px;
 `
 
 export const NavLink = styled(Link)`
