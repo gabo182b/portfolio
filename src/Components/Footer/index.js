@@ -10,17 +10,17 @@ const Footer = () => {
       <FaLinkedin />
       <FooterList>
         <FooterLink>
-          <Link href='/' target="_blank" aria-label="Twitter">
+          <Link href='/' target="_blank" aria-label="Linkedin">
             <FaLinkedin />
           </Link>
         </FooterLink>
         <FooterLink>
-          <Link href='/' target="_blank" aria-label="Twitter">
+          <Link href='/' target="_blank" aria-label="Github">
             <FaGithub />
           </Link>
         </FooterLink>
         <FooterLink>
-          <Link href='/' target="_blank" aria-label="Twitter">
+          <Link href='/' target="_blank" aria-label="Instagram">
             <FaInstagram />
           </Link>
         </FooterLink>
