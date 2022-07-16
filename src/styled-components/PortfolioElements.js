@@ -4,34 +4,24 @@ import { colors, fontSizes } from "./variables";
 
 export const PortfolioContainer = styled.section`
     background: ${colors.backgroundColor};
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 `
 
 export const PortfolioWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
     z-index: 1;
     //height: 53.75rem;
     height: 860px;
     width: 100%;
     max-width: 68.75rem;
     padding: 0 1.5rem;
+    margin: auto;
 `
 
 export const Gallery = styled.div`
-    /* width: 100%;
+    padding-top: 25rem;
     display: grid;
-    padding: 1rem;
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-    justify-content: center; 
-    align-items: center; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
+    justify-items: center;
+    gap: 1rem;
+    grid-auto-rows: 30rem;
+    //grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    
 `
