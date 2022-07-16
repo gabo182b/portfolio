@@ -19,7 +19,9 @@ export const ProjectCard = styled.article`
     overflow: hidden;
     cursor: pointer;
     background: rebeccapurple;
-    border-radius: 2%;
+    border-radius: 5%;
+    width: 30rem;
+    height: 30rem;
 
     &:after {
             content: '';
@@ -63,7 +65,7 @@ export const ProjectInfo = styled.div`
 
 export const ProjectTitle = styled.h1`
     font-size: ${fontSizes.sizeMd};
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.5rem 0;
 `
 
 export const ProjectDescription = styled.p`
