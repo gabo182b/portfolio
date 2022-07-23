@@ -3,25 +3,18 @@ import { colors, fontSizes } from "./variables";
 
 export const LinkTag = styled.a`
     opacity: 0;
-    //color: ${colors.white};
-    color: ${colors.backgroundColor};
+    color: ${colors.secondaryColor};
     transition: all 0.5s ease-in-out;
     font-size: ${fontSizes.sizeXl};
-
-    &:hover {
-    color: ${colors.backgroundColor};
-    }
 `
 
 export const ProjectCard = styled.article`
     position: relative;
-    border: 5px solid ${colors.white};
+    border: 0.3rem solid ${colors.projectCardHover};
     overflow: hidden;
     cursor: pointer;
-    background: rebeccapurple;
+    //background: rebeccapurple;
     border-radius: 5%;
-    width: 30rem;
-    height: 30rem;
 
     &:after {
             content: '';
@@ -30,7 +23,7 @@ export const ProjectCard = styled.article`
             left: 0;
             height: 100%;
             width: 100%;
-            background: ${colors.white};
+            background: ${colors.projectCardHover};
             transition: all 0.5s ease-in-out
         }
 
@@ -41,6 +34,7 @@ export const ProjectCard = styled.article`
             }
             ${LinkTag} {
                 opacity: 1;
+                color: ${colors.mainColor};
             }
     }   
 `
