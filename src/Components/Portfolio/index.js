@@ -6,11 +6,11 @@ import { PortfolioContainer, PortfolioWrapper, Gallery } from "../../styled-comp
 const Portfolio = () => {
   return (
     <PortfolioContainer id="portfolio">
-      <PortfolioWrapper>
-        <Gallery>
-          <Project {...projectOne} />
-        </Gallery>
-      </PortfolioWrapper>
+      <Gallery>
+        <Project {...projectOne} />
+        <Project {...projectOne} />
+        <Project {...projectOne} />
+      </Gallery>
     </PortfolioContainer>
   );
 };
