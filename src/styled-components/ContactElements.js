@@ -22,19 +22,15 @@ export const FormWrapper = styled.div`
 `
 export const Form = styled.form`  
     font-size: ${fontSizes.sizeMd};
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 1.2rem;
     border-radius: 1rem;
     padding: 1rem;
     width: 30rem;
-    height: 40rem;
     margin: 0 0 0 0;
-    /* display: grid;
-    grid-template-columns: max-content max-content;
-    gap: 0.5rem; */
+    -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
+    backdrop-filter: blur(8px); /* Chrome and Opera */
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.08);
+
 `
 
 export const FormLabel = styled.label`
@@ -45,8 +41,7 @@ export const FormLabel = styled.label`
 export const FormInput = styled.input`
     background: transparent;
     margin: 0.5rem 0 0.5rem 0;
-    width: 11rem;
-    border: 0.2rem solid ${colors.secondaryColor};
+    border: 0.1rem solid ${colors.buttonTextHover};
     text-align: center;
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -60,7 +55,7 @@ export const FormTextarea = styled.textarea`
     width: 20rem;
     border: 2px solid red;
     width: 100%;
-    border: 0.2rem solid ${colors.secondaryColor};
+    border: 0.1rem solid ${colors.buttonTextHover};
     padding: 1rem;
 `
 
@@ -71,5 +66,5 @@ export const FormButton = styled.button`
     padding: 1rem 2rem ;
     font-size: ${fontSizes.sizeMd};
     border: none;
-    margin-top: -60px;
+    margin-top: 1rem;
 `
