@@ -2,19 +2,7 @@ import styled from "styled-components";
 import { colors, fontSizes } from "./variables";
 
 export const AboutContainer = styled.section`
-    background: ${colors.backgroundColor};
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    //margin: -0.1rem 0;
-
-    /* @media screen and (max-width: 768px){
-        padding: 0;
-    } */
-`
-
-export const AboutWrapper = styled.div`
+    background: ${colors.mainColor};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,6 +13,24 @@ export const AboutWrapper = styled.div`
     width: 100%;
     max-width: 68.75rem;
     padding: 0 2rem 0 2rem;
+    //margin: -0.1rem 0;
+
+    /* @media screen and (max-width: 768px){
+        padding: 0;
+    } */
+`
+
+export const AboutWrapper = styled.div`
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    //height: 53.75rem;
+    height: 860px;
+    width: 100%;
+    max-width: 68.75rem;
+    padding: 0 2rem 0 2rem; */
 
 `
 
