@@ -7,7 +7,7 @@ export const FooterContainer = styled.footer`
     align-items: center;
     justify-content: center;
     height: 6.5rem;
-    background: rebeccapurple;
+    background: ${colors.secondaryColor};;
     padding: 3rem 1.5rem 3rem 1.5rem;
     max-width: 68.75rem;
     margin: 0 auto 0 auto;
