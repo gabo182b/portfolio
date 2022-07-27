@@ -7,10 +7,8 @@ export const FormSection = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 860px;
+    height: 780px;
     width: 100%;
-    max-width: 68.75rem;
-    padding: 0 1.5rem;
 `
 
 export const FormWrapper = styled.div`
