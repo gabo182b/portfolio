@@ -31,7 +31,7 @@ const Navbar = ({ toggleSidebar }) => {
               duration={500}
               spy={true}
               exact='true'
-              offset={-80}
+              //offset={-80}
               activeClass='active'
             >
               Home
@@ -44,7 +44,7 @@ const Navbar = ({ toggleSidebar }) => {
               duration={500}
               spy={true}
               exact='true'
-              offset={-80}
+              //offset={-80}
               activeClass='active'
             >
               About
@@ -57,7 +57,7 @@ const Navbar = ({ toggleSidebar }) => {
               duration={500}
               spy={true}
               exact='true'
-              offset={-80}
+              //offset={-80}
               activeClass='active'
             >
               Portfolio
@@ -70,7 +70,7 @@ const Navbar = ({ toggleSidebar }) => {
               duration={500}
               spy={true}
               exact='true'
-              offset={-80}
+              //offset={-80}
               activeClass='active'
             >
               Contact
