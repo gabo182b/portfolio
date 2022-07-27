@@ -1,6 +1,4 @@
 import React from "react";
-//import { NavLink } from "react-router-dom";
-import { Link } from "react-scroll";
 import { SidebarContainer, Icon, CloseIcon, SidebarMenu, SidebarLink } from '../../styled-components/SidebarElements'
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
