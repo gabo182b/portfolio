@@ -15,20 +15,6 @@ export const AboutContainer = styled.section`
     }
 `
 
-export const AboutWrapper = styled.div`
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    //height: 53.75rem;
-    height: 860px;
-    width: 100%;
-    max-width: 68.75rem;
-    padding: 0 2rem 0 2rem; */
-
-`
-
 export const AboutInfo = styled.p`
     color: ${colors.white} ;
     text-align: justify;
@@ -39,6 +25,13 @@ export const AboutInfo = styled.p`
         width: 70rem;
         font-size: ${fontSizes.sizeMdLg};
         line-height: 4rem;
+    }
+
+    @media ${device.desktop} {
+        width: 85rem;
+        font-size: ${fontSizes.sizeMdLg};
+        line-height: 4.5rem;
+        margin-top: -20rem;
     }
 `
 
@@ -53,6 +46,13 @@ export const ResumeContainer = styled.div`
         position: absolute;
         margin-top: 90rem;
     }
+
+    @media ${device.desktop} {
+        position: absolute;
+        margin-top: 57rem;
+    }
+
+    
 `
 
 export const Resume = styled.a`

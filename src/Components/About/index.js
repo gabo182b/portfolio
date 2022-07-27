@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutContainer, AboutWrapper, AboutInfo, ResumeContainer, Resume } from "../../styled-components/AboutElements";
+import { AboutContainer, AboutInfo, ResumeContainer, Resume } from "../../styled-components/AboutElements";
 
 
 const About = () => {
