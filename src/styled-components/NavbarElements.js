@@ -6,7 +6,7 @@ import { fontSizes, colors } from "./variables";
 
 export const Nav = styled.nav`
     background: ${({ scrollNav }) => (scrollNav ? '#0E0C15' : 'transparent')};
-    //opacity: 0.6;
+    opacity: 0.6;
     height: 80px;
     margin: -80px 0 0 0;
     display: flex;
