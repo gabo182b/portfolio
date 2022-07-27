@@ -2,12 +2,10 @@ import styled from "styled-components";
 import { colors, fontSizes } from "./variables";
 
 export const HeroContainer = styled.section`
-    background: #0c0c0c;
+    //background: #0c0c0c;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1.875rem 0 1.875rem;
-    //height: 55rem;
     height: 880px;
     position: relative;
     z-index: 1;
