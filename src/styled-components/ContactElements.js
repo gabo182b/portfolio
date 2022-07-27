@@ -41,10 +41,6 @@ export const Form = styled.form`
 
 `
 
-export const FormLabel = styled.label`
-    text-align: center;
-`
-
 export const FormInput = styled.input`
     background: transparent;
     margin: 0.5rem 0 0.5rem 0;

@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { FormSection, Form, FormLabel, FormInput, FormTextarea, FormButton } from '../../styled-components/ContactElements'
+import React, { useReducer } from "react";
+import { initialState, reducer } from "../../hooks/useFormFiller";
+import { FormSection, Form, FormInput, FormTextarea, FormButton } from '../../styled-components/ContactElements'
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
-  const [mail, setMail] = useState("");
+  const [state, dispatch] = useReducer(reducer, initialState)
 
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+
   return (
     <FormSection id="contact">
       <Form onSubmit={handleSubmit}>
@@ -17,8 +17,14 @@ const Contact = () => {
           id="name"
           name="name"
           placeholder="Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          value={state.name}
+          onChange={(e) => dispatch(
+            {
+              type: "update_input",
+              key: "name",
+              value: e.target.value
+            }
+          )}
         />
         <FormInput
           type="email"
@@ -26,8 +32,14 @@ const Contact = () => {
           name="email"
           required
           placeholder="email"
-          value={mail}
-          onChange={(e) => setMail(e.target.value)}
+          value={state.email}
+          onChange={(e) => dispatch(
+            {
+              type: "update_input",
+              key: "email",
+              value: e.target.value
+            }
+          )}
         />
         <FormTextarea
           className="form-section__form-input--message"
@@ -37,8 +49,14 @@ const Contact = () => {
           cols={5}
           required
           placeholder="Write your message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          value={state.message}
+          onChange={(e) => dispatch(
+            {
+              type: "update_input",
+              key: "message",
+              value: e.target.value
+            }
+          )}
         />
       </Form>
       <FormButton>Submit</FormButton>
