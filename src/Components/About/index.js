@@ -15,7 +15,7 @@ const About = () => {
         always with an eager to continue learning and become a better developer.
         <br />
         <br />
-        I have Knowledge about HTML, CSS javaScript, reactjs, SASS, Styled Components, nodejs, postgreSQL, expressjs, tailwindcss, antdesign.
+        I have Knowledge about HTML, CSS javaScript, ReactJS, SASS, Styled Components, nodejs, postgreSQL, ExpressJS, TailwindCSS, Ant Design.
         <br />
         <br />
         I also have interest in Music, Video Games, Computer hardware,
