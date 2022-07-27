@@ -13,7 +13,6 @@ export const ProjectCard = styled.article`
     border: 0.3rem solid ${colors.projectCardHover};
     overflow: hidden;
     cursor: pointer;
-    //background: rebeccapurple;
     border-radius: 5%;
 
     &:after {
@@ -53,7 +52,6 @@ export const ProjectInfo = styled.div`
     align-items: center;
     justify-content: center;
     margin: 1rem 0 1rem 0;
-    padding: 0;
     color:${colors.white};
 `
 
