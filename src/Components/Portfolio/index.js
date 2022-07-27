@@ -9,7 +9,6 @@ const Portfolio = () => {
       <Gallery>
         <Project {...projectOne} />
         <Project {...projectOne} />
-        <Project {...projectOne} />
       </Gallery>
     </PortfolioContainer>
   );
