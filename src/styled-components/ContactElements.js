@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, fontSizes } from "./variables";
+import { colors, fontSizes, device } from "./variables";
 
 export const FormSection = styled.section`
     background: ${colors.mainColor};
@@ -9,6 +9,10 @@ export const FormSection = styled.section`
     justify-content: center;
     height: 780px;
     width: 100%;
+
+    @media ${device.tablet} {
+        height: 1115px;
+    }
 `
 
 export const FormWrapper = styled.div`
@@ -29,11 +33,16 @@ export const Form = styled.form`
     backdrop-filter: blur(8px); /* Chrome and Opera */
     box-shadow: inset 0 0 0 200px rgba(255,255,255,0.08);
 
+    @media ${device.tablet} {
+        width: 60rem;
+        padding: 3rem;
+    }
+
 `
 
 export const FormLabel = styled.label`
     text-align: center;
-    margin: 0.5rem 0 0.5rem 0;
+    //margin: 0.5rem 0 0.5rem 0;
 `
 
 export const FormInput = styled.input`
@@ -45,6 +54,12 @@ export const FormInput = styled.input`
     border-radius: 0.5rem;
     padding: 1rem;
     width: 100%;
+    
+    @media ${device.tablet} {
+        font-size: ${fontSizes.sizeMdLg};
+        padding: 2rem;
+        margin: 1rem 0 1.5rem 0;
+    }
 `
 
 export const FormTextarea = styled.textarea`
@@ -55,6 +70,12 @@ export const FormTextarea = styled.textarea`
     width: 100%;
     border: 0.1rem solid ${colors.buttonTextHover};
     padding: 1rem;
+
+    @media ${device.tablet} {
+        font-size: ${fontSizes.sizeMdLg};
+        padding: 2rem;
+        margin: 1rem 0 1rem 0;
+    }
 `
 
 export const FormButton = styled.button`
@@ -65,4 +86,10 @@ export const FormButton = styled.button`
     font-size: ${fontSizes.sizeMd};
     border: none;
     margin-top: 1rem;
+
+    @media ${device.tablet} {
+        font-size: ${fontSizes.sizeMdLg};
+        padding: 2rem;
+        margin-top: 3rem;
+    }
 `

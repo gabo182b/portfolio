@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-scroll/modules";
-import { fontSizes, colors } from "./variables";
+import { fontSizes, colors, device } from "./variables";
 
 
 
@@ -16,9 +16,13 @@ export const Nav = styled.nav`
     top: 0;
     z-index: 3;
 
-    @media screen and (max-width: 960px){
+    @media ${device.tablet} {
         transition: 0.8s all ease;
     }
+
+    /* @media screen and (max-width: 960px){
+        transition: 0.8s all ease;
+    } */
 `
 
 export const NavbarContainer = styled.div`
@@ -77,5 +81,9 @@ export const NavLink = styled(Link)`
 
     &.active {
         border-bottom: 3px solid #fff;
+    }
+
+    @media ${device.tablet} {
+        font-size: ${fontSizes.sizeMdLg}
     }
 `

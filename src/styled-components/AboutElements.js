@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, fontSizes } from "./variables";
+import { colors, fontSizes, device } from "./variables";
 
 export const AboutContainer = styled.section`
     background: ${colors.mainColor};
@@ -10,9 +10,9 @@ export const AboutContainer = styled.section`
     height: 880px;
     z-index: 1;
 
-    /* @media screen and (max-width: 768px){
-        padding: 0;
-    } */
+    @media ${device.tablet} {
+        height: 1180px;
+    }
 `
 
 export const AboutWrapper = styled.div`
@@ -34,6 +34,12 @@ export const AboutInfo = styled.p`
     text-align: justify;
     width: 30rem;
     font-size: ${fontSizes.sizeMd};
+    
+    @media ${device.tablet} {
+        width: 70rem;
+        font-size: ${fontSizes.sizeMdLg};
+        line-height: 4rem;
+    }
 `
 
 export const ResumeContainer = styled.div`
@@ -42,6 +48,11 @@ export const ResumeContainer = styled.div`
     justify-content: center;
     flex-direction: column;
     margin: 5rem 0 0 0;
+
+    @media ${device.tablet} {
+        position: absolute;
+        margin-top: 90rem;
+    }
 `
 
 export const Resume = styled.a`
@@ -49,4 +60,10 @@ export const Resume = styled.a`
     text-decoration: none;
     text-align: center;
     font-size: ${fontSizes.sizeMd};
+
+    @media ${device.tablet} {
+        width: 70rem;
+        font-size: ${fontSizes.sizeMdLg};
+        line-height: 4rem;
+    }
 `

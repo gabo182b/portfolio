@@ -13,6 +13,7 @@ export const device = {
 export const fontSizes = {
     sizeSm: '1rem',
     sizeMd: '2rem',
+    sizeMdLg: '2.8rem',
     sizeLg: '3.5rem',
     sizeXl: '4.20rem'
 }

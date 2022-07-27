@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, fontSizes } from "./variables";
+import { colors, fontSizes, device } from "./variables";
 
 export const HeroContainer = styled.section`
     //background: #0c0c0c;
@@ -9,6 +9,10 @@ export const HeroContainer = styled.section`
     height: 880px;
     position: relative;
     z-index: 1;
+
+    @media ${device.tablet} {
+        height: 1180px;
+    }
 `;
 
 export const HeroBackground = styled.div`

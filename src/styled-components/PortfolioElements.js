@@ -10,6 +10,10 @@ export const PortfolioContainer = styled.section`
     align-items: center;
     height: 880px;
     z-index: 1;
+
+    @media ${device.tablet} {
+        height: 1180px;
+    }
 `
 
 export const PortfolioWrapper = styled.div`
