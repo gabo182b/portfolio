@@ -1,7 +1,6 @@
 import React from "react";
 import { AboutContainer, AboutInfo, ResumeContainer, Resume } from "../../styled-components/AboutElements";
 
-
 const About = () => {
   return (
     <AboutContainer id="about">
