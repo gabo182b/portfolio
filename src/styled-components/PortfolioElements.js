@@ -4,12 +4,12 @@ import { colors, fontSizes, device } from "./variables";
 
 export const PortfolioContainer = styled.section`
     background: ${colors.secondaryColor};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 880px;
     z-index: 1;
-    //height: 53.75rem;
-    height: 860px;
-    width: 100%;
-    padding: 0 1.5rem;
-    margin: auto;
 `
 
 export const PortfolioWrapper = styled.div`
@@ -26,8 +26,10 @@ export const PortfolioWrapper = styled.div`
 `
 
 export const Gallery = styled.div`
+    height: 100%;
     width: 60vw;
-    margin: auto auto auto auto;
+    margin: 40rem auto 50rem auto;
+    padding: 10rem 0 3rem 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
