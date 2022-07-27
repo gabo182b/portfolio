@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, fontSizes } from "./variables";
+import { colors, fontSizes, device } from "./variables";
 
 export const FooterContainer = styled.footer`
     display: flex;
@@ -11,6 +11,10 @@ export const FooterContainer = styled.footer`
     padding: 3rem 1.5rem 3.5rem 1.5rem;
     margin: 0 auto 0 auto;
     color: ${colors.buttonText};
+    
+    @media ${device.desktop} {
+        height: 8rem;
+    }
 `
 export const FooterList = styled.ul`
     display: flex;
@@ -28,6 +32,11 @@ export const Link = styled.a`
     text-decoration: none;
     font-size: ${fontSizes.sizeLg};
     color: ${colors.white};
+
+    @media ${device.desktop} {
+        font-size: ${fontSizes.sizeXl};
+    }
+
 `
 
 export const FooterTextContainer = styled.div`
@@ -40,5 +49,4 @@ export const FooterText = styled.p`
     font-size: ${fontSizes.sizeSm};
     margin: 0.5rem 0 0.5rem 0;
     text-align: center;
-    
 `
