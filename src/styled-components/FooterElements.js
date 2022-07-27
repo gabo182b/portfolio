@@ -9,7 +9,6 @@ export const FooterContainer = styled.footer`
     height: 6.5rem;
     background: ${colors.secondaryColor};;
     padding: 3rem 1.5rem 3.5rem 1.5rem;
-    max-width: 68.75rem;
     margin: 0 auto 0 auto;
     color: ${colors.buttonText};
 `
