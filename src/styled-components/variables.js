@@ -15,7 +15,8 @@ export const fontSizes = {
     sizeMd: '2rem',
     sizeMdLg: '2.8rem',
     sizeLg: '3.5rem',
-    sizeXl: '4.20rem'
+    sizeXl: '4.20rem',
+    sizeXxl: '5.5rem'
 }
 
 export const colors = {
