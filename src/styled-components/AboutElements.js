@@ -5,15 +5,10 @@ export const AboutContainer = styled.section`
     background: ${colors.mainColor};
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 880px;
     z-index: 1;
-    //height: 53.75rem;
-    height: 860px;
-    width: 100%;
-    max-width: 68.75rem;
-    padding: 0 2rem 0 2rem;
-    //margin: -0.1rem 0;
 
     /* @media screen and (max-width: 768px){
         padding: 0;
