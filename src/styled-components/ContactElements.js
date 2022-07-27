@@ -13,15 +13,12 @@ export const FormSection = styled.section`
     @media ${device.tablet} {
         height: 1115px;
     }
+
+    @media ${device.desktop} {
+        height: 872px;
+    }
 `
 
-export const FormWrapper = styled.div`
-    /* //height: 53.75rem;
-    height: 860px;
-    width: 100%;
-    max-width: 68.75rem;
-    padding: 0 1.5rem; */
-`
 export const Form = styled.form`  
     font-size: ${fontSizes.sizeMd};
     gap: 1.2rem;
@@ -38,11 +35,14 @@ export const Form = styled.form`
         padding: 3rem;
     }
 
+    @media ${device.desktop} {
+        margin-top: 8rem;
+    }
+
 `
 
 export const FormLabel = styled.label`
     text-align: center;
-    //margin: 0.5rem 0 0.5rem 0;
 `
 
 export const FormInput = styled.input`
