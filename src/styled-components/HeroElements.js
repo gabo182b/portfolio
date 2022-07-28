@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { colors, fontSizes, device } from "./variables";
 
 export const HeroContainer = styled.section`
@@ -46,7 +47,7 @@ export const HeroContent = styled.div`
     }
 `;
 
-export const HeroTitle = styled.h1`
+export const HeroTitle = styled(motion.h1)`
     color: ${colors.white};
     font-size: ${fontSizes.sizeXl};
     text-align: center;
@@ -57,7 +58,7 @@ export const HeroTitle = styled.h1`
     }
 `;
 
-export const HeroSubtitle = styled.h2`
+export const HeroSubtitle = styled(motion.h2)`
     color: ${colors.white};
     font-size: ${fontSizes.sizeLg};
     text-align: center;
@@ -68,7 +69,7 @@ export const HeroSubtitle = styled.h2`
     }
 `;
 
-export const HeroImageContainer = styled.div`
+export const HeroImageContainer = styled(motion.div)`
     border: 0.1rem ${colors.white} solid;
     border-radius: 50%;
     overflow: hidden;
