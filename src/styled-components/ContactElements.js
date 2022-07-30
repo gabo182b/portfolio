@@ -50,6 +50,7 @@ export const FormInput = styled.input`
     border-radius: 0.5rem;
     padding: 1rem;
     width: 100%;
+    color: ${colors.white};
     
     @media ${device.tablet} {
         font-size: ${fontSizes.sizeMdLg};
@@ -66,6 +67,7 @@ export const FormTextarea = styled.textarea`
     width: 100%;
     border: 0.1rem solid ${colors.buttonTextHover};
     padding: 1rem;
+    color: ${colors.white};
 
     @media ${device.tablet} {
         font-size: ${fontSizes.sizeMdLg};
