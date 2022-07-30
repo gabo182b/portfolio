@@ -2,10 +2,28 @@ import React from "react";
 import { FaGithub, FaEye } from "react-icons/fa";
 import { ProjectCard, ProjectImage, Image, ProjectInfo, ProjectTitle, ProjectDescription, ProjectLinks, LinkTag } from '../../styled-components/ProjectElements';
 
-const Project = ({ img, title, description }) => {
+const cardVariants = {
+  initial: {
+    x: '-100vw'
+  },
+  animate: {
+    x: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 150,
+      delay: 0.5
+    }
+  },
+}
 
+const Project = ({ img, title, description }) => {
   return (
-    <ProjectCard>
+    <ProjectCard
+      variants={cardVariants}
+      initial="initial"
+      animate="animate"
+      whileHover={{ rotate: 360 }}
+    >
       <ProjectImage>
         <Image src={img} alt='project-image' />
       </ProjectImage>

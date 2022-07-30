@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { colors, fontSizes } from "./variables";
 
 export const LinkTag = styled.a`
@@ -8,7 +9,7 @@ export const LinkTag = styled.a`
     font-size: ${fontSizes.sizeXl};
 `
 
-export const ProjectCard = styled.article`
+export const ProjectCard = styled(motion.article)`
     position: relative;
     border: 0.3rem solid ${colors.projectCardHover};
     overflow: hidden;
@@ -38,7 +39,7 @@ export const ProjectCard = styled.article`
     }   
 `
 
-export const ProjectImage = styled.figure`
+export const ProjectImage = styled(motion.figure)`
     
 `
 
@@ -46,7 +47,7 @@ export const Image = styled.img`
     width: 100%; 
 `
 
-export const ProjectInfo = styled.div`
+export const ProjectInfo = styled(motion.div)`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +67,7 @@ export const ProjectDescription = styled.p`
     width: 80%;
 `
 
-export const ProjectLinks = styled.div`
+export const ProjectLinks = styled(motion.div)`
     position: absolute;
     top: 0;
     height: 100%;
