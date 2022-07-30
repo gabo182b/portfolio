@@ -57,11 +57,3 @@ export const FooterText = styled.p`
     margin: 0.5rem 0 0.5rem 0;
     text-align: center;
 `
-
-// export const LinkedInIcon = styled(FaLinkedin)`
-
-//     &:hover {
-        
-//         filter: drop-shadow(0px 0px 4px rgb(255,255,255));        
-//     }
-// `
