@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { colors, fontSizes, device } from "./variables";
 
 export const AboutContainer = styled.section`
@@ -15,7 +16,7 @@ export const AboutContainer = styled.section`
     }
 `
 
-export const AboutInfo = styled.p`
+export const AboutInfo = styled(motion.p)`
     color: ${colors.white} ;
     text-align: justify;
     width: 30rem;
@@ -35,12 +36,15 @@ export const AboutInfo = styled.p`
     }
 `
 
-export const ResumeContainer = styled.div`
+export const ResumeContainer = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin: 5rem 0 0 0;
+    border: 0.1rem solid ${colors.white} ;
+    padding: 1.5rem;
+    border-radius: 10%;
 
     @media ${device.tablet} {
         position: absolute;
@@ -51,8 +55,6 @@ export const ResumeContainer = styled.div`
         position: absolute;
         margin-top: 57rem;
     }
-
-    
 `
 
 export const Resume = styled.a`
