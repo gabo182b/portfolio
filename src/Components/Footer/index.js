@@ -7,7 +7,6 @@ const Footer = () => {
 
   return (
     <FooterContainer>
-      <FaLinkedin />
       <FooterList>
         <FooterLink>
           <Link href='/' target="_blank" aria-label="Linkedin">
