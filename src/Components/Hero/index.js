@@ -2,6 +2,7 @@ import React from "react";
 import Video from '../../assets/video/galaxy.mp4';
 import { HeroContainer, HeroBackground, VideoBackground, HeroContent, HeroTitle, HeroSubtitle, HeroImageContainer, HeroImage, Image } from '../../styled-components/HeroElements';
 import image from '../../assets/images/gabriel.jpg';
+import { type } from "@testing-library/user-event/dist/type";
 
 const Hero = () => {
   return (
@@ -12,33 +13,34 @@ const Hero = () => {
       <HeroContent>
         <HeroTitle
           initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
+          animate={{ scale: 1 }}
           transition={{
-            duration: 0.6,
             ease: 'easeInOut',
-            delay: 0.5,
-            type: 'spring'
+            type: 'spring',
+            stiffness: 120
           }}
         >
           Gabriel Rojas
         </HeroTitle>
         <HeroSubtitle
           initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
+          animate={{ scale: 1 }}
           transition={{
-            duration: 0.8,
+            delay: 0.5,
             ease: 'easeInOut',
-            delay: 0.7,
-            type: 'spring'
+            type: 'spring',
+            stiffness: 120
           }}
         >
           Developer
         </HeroSubtitle>
         <HeroImageContainer
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
           transition={{
-            duration: 2.5
+            delay: 0.5,
+            type: 'tween',
+            duration: 1
           }}
         >
           <HeroImage>
