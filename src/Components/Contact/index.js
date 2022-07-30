@@ -59,7 +59,15 @@ const Contact = () => {
           )}
         />
       </Form>
-      <FormButton>Submit</FormButton>
+      <FormButton
+        whileHover={{
+          cursor: 'pointer',
+          textShadow: "0px 0px 4px rgb(255,255,255)",
+          boxShadow: "0px 0px 4px rgb(255,255,255)"
+        }}
+      >
+        Submit
+      </FormButton>
     </FormSection>
 
   );

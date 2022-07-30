@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { colors, fontSizes, device } from "./variables";
 
 export const FormSection = styled.section`
@@ -51,6 +52,18 @@ export const FormInput = styled.input`
     padding: 1rem;
     width: 100%;
     color: ${colors.white};
+    outline: none ;
+
+    &:-webkit-autofill {
+        box-shadow: 0 0 0 1000px #211e27;
+        -webkit-box-shadow: 0 0 0 1000px #211e27 inset !important;
+        -webkit-text-fill-color: ${colors.white} !important;
+    } 
+
+    &:focus {
+        border: 0.1rem solid ${colors.buttonTextHover};
+        box-shadow: 0px 0px 4px rgb(255,255,255);  
+    }
     
     @media ${device.tablet} {
         font-size: ${fontSizes.sizeMdLg};
@@ -68,6 +81,12 @@ export const FormTextarea = styled.textarea`
     border: 0.1rem solid ${colors.buttonTextHover};
     padding: 1rem;
     color: ${colors.white};
+    outline: none ;
+
+    &:focus {
+        border: 0.1rem solid ${colors.buttonTextHover};
+        box-shadow: 0px 0px 4px rgb(255,255,255);        
+    }
 
     @media ${device.tablet} {
         font-size: ${fontSizes.sizeMdLg};
@@ -76,7 +95,7 @@ export const FormTextarea = styled.textarea`
     }
 `
 
-export const FormButton = styled.button`
+export const FormButton = styled(motion.button)`
     background: ${colors.buttonBackground};
     border-radius: 2rem;
     color: ${colors.buttonText};
