@@ -13,7 +13,7 @@ export const HeroContainer = styled.section`
     @media ${device.tablet} {
         height: 1180px;
     }
-`;
+`
 
 export const HeroBackground = styled.div`
     position: absolute;
@@ -24,7 +24,7 @@ export const HeroBackground = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
-`;
+`
 
 export const VideoBackground = styled.video`
     width: 100%;
@@ -32,7 +32,7 @@ export const VideoBackground = styled.video`
     -o-object-fit: cover;
     object-fit: cover;
     background: #232a34;
-`;
+`
 
 export const HeroContent = styled.div` 
     display: flex;
@@ -44,7 +44,7 @@ export const HeroContent = styled.div`
     @media ${device.xlScreen} {
         margin-top: -20rem;
     }
-`;
+`
 
 export const HeroTitle = styled(motion.h1)`
     color: ${colors.white};
@@ -55,7 +55,7 @@ export const HeroTitle = styled(motion.h1)`
     @media ${device.xlScreen} {
         font-size: ${fontSizes.sizeXxl};    
     }
-`;
+`
 
 export const HeroSubtitle = styled(motion.h2)`
     color: ${colors.white};
@@ -66,7 +66,7 @@ export const HeroSubtitle = styled(motion.h2)`
     @media ${device.xlScreen} {
         font-size: ${fontSizes.sizeXxl};    
     }
-`;
+`
 
 export const HeroImageContainer = styled(motion.div)`
     border: 0.1rem ${colors.white} solid;
@@ -81,8 +81,7 @@ export const HeroImage = styled.figure`
     justify-content: center;
     width: 13rem;
     height: 13rem;
-    
-`;
+`
 
 export const Image = styled.img`
     width: 15rem;
