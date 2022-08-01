@@ -39,6 +39,7 @@ export const HeroContent = styled.div`
     flex-direction: column;
     align-items: center; 
     position: absolute;
+    margin: -4rem 0 0 0;
 
     @media ${device.xlScreen} {
         margin-top: -20rem;
@@ -49,7 +50,7 @@ export const HeroTitle = styled(motion.h1)`
     color: ${colors.white};
     font-size: ${fontSizes.sizeXl};
     text-align: center;
-    margin: 18rem 0 0 0;
+    margin: 0 0 0 0;
 
     @media ${device.xlScreen} {
         font-size: ${fontSizes.sizeXxl};    
