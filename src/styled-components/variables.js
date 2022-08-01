@@ -1,13 +1,13 @@
 const screenSizes = {
     tablet: '768px',
-    laptop: '1024px',
-    desktop: '1600px'
+    desktop: '1024px',
+    xlScreen: '1600px'
 }
 
 export const device = {
-    tablet: `(min-width:${screenSizes.tablet})`,
-    laptop: `(min-width:${screenSizes.laptop})`,
-    desktop: `(min-width:${screenSizes.desktop})`
+    tablet: `(min-width:${screenSizes.tablet})`, //min-width = from
+    laptop: `(min-width:${screenSizes.desktop})`,
+    xlScreen: `(min-width:${screenSizes.xlScreen})`
 }
 
 export const fontSizes = {
