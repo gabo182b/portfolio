@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { colors, fontSizes, device } from "./variables";
 
 export const HeroContainer = styled.section`
-    //background: #0c0c0c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,9 +39,8 @@ export const HeroContent = styled.div`
     flex-direction: column;
     align-items: center; 
     position: absolute;
-    margin-top: -10rem;
 
-    @media ${device.desktop} {
+    @media ${device.xlScreen} {
         margin-top: -20rem;
     }
 `;
@@ -51,9 +49,9 @@ export const HeroTitle = styled(motion.h1)`
     color: ${colors.white};
     font-size: ${fontSizes.sizeXl};
     text-align: center;
-    margin: 0 0 5rem 0;
+    margin: 18rem 0 0 0;
 
-    @media ${device.desktop} {
+    @media ${device.xlScreen} {
         font-size: ${fontSizes.sizeXxl};    
     }
 `;
@@ -62,9 +60,9 @@ export const HeroSubtitle = styled(motion.h2)`
     color: ${colors.white};
     font-size: ${fontSizes.sizeLg};
     text-align: center;
-    margin: 0 0 5rem 0;
+    margin: 5rem 0 0 0;
 
-    @media ${device.desktop} {
+    @media ${device.xlScreen} {
         font-size: ${fontSizes.sizeXxl};    
     }
 `;
@@ -73,7 +71,7 @@ export const HeroImageContainer = styled(motion.div)`
     border: 0.1rem ${colors.white} solid;
     border-radius: 50%;
     overflow: hidden;
-    margin: 8rem 0 0 0;
+    margin: 7rem 0 0 0;
 `
 
 export const HeroImage = styled.figure`

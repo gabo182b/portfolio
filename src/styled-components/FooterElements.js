@@ -12,7 +12,7 @@ export const FooterContainer = styled.footer`
     margin: 0 auto 0 auto;
     color: ${colors.buttonText};
     
-    @media ${device.desktop} {
+    @media ${device.xlScreen} {
         height: 8rem;
     }
 `
@@ -40,7 +40,7 @@ export const Link = styled.a`
 
     
     
-    @media ${device.desktop} {
+    @media ${device.xlScreen} {
         font-size: ${fontSizes.sizeXl};
     }
 

@@ -28,7 +28,7 @@ export const AboutInfo = styled(motion.p)`
         line-height: 4rem;
     }
 
-    @media ${device.desktop} {
+    @media ${device.xlScreen} {
         width: 85rem;
         font-size: ${fontSizes.sizeMdLg};
         line-height: 4.5rem;
@@ -51,7 +51,7 @@ export const ResumeContainer = styled(motion.div)`
         margin-top: 90rem;
     }
 
-    @media ${device.desktop} {
+    @media ${device.xlScreen} {
         position: absolute;
         margin-top: 57rem;
     }

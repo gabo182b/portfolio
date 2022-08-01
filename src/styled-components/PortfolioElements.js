@@ -42,7 +42,7 @@ export const Gallery = styled.div`
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @media ${device.laptop} {
+    @media ${device.desktop} {
         grid-template-columns: repeat(3, 1fr);
     }
 `

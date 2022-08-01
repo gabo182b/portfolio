@@ -15,7 +15,7 @@ export const FormSection = styled.section`
         height: 1115px;
     }
 
-    @media ${device.desktop} {
+    @media ${device.xlScreen} {
         height: 872px;
     }
 `
@@ -36,7 +36,7 @@ export const Form = styled.form`
         padding: 3rem;
     }
 
-    @media ${device.desktop} {
+    @media ${device.xlScreen} {
         margin-top: 8rem;
     }
 
