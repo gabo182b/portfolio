@@ -21,6 +21,7 @@ export const AboutInfo = styled(motion.p)`
     text-align: justify;
     width: 30rem;
     font-size: ${fontSizes.sizeMd};
+    margin: 3rem 0 0 0;
     
     @media ${device.tablet} {
         width: 70rem;
