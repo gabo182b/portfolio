@@ -76,11 +76,16 @@ export const HeroImageContainer = styled(motion.div)`
 `
 
 export const HeroImage = styled.figure`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    height: 13rem;
     
 `;
 
 export const Image = styled.img`
-    width: 10rem;
-    height: 10rem;
-
+    width: 15rem;
+    height: 17rem;
+    margin: 4.1rem 0 0 0;
 `
