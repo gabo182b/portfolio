@@ -58,6 +58,7 @@ export const ProjectInfo = styled(motion.div)`
     align-items: center;
     justify-content: center;
     color:${colors.white};
+    border-top: 0.3rem solid ${colors.projectCardHover};
 `
 
 export const ProjectTitle = styled.h1`
