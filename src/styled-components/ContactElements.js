@@ -21,12 +21,11 @@ export const FormSection = styled.section`
 `
 
 export const Form = styled.form`  
-    font-size: ${fontSizes.sizeMd};
-    gap: 1.2rem;
     border-radius: 1rem;
     padding: 1rem;
     width: 30rem;
     margin: 0 0 0 0;
+    //box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.67);
     -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
     backdrop-filter: blur(8px); /* Chrome and Opera */
     box-shadow: inset 0 0 0 200px rgba(255,255,255,0.08);
@@ -47,9 +46,9 @@ export const FormInput = styled.input`
     margin: 0.5rem 0 0.5rem 0;
     border: 0.1rem solid ${colors.buttonTextHover};
     text-align: center;
-    padding: 0.5rem;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 1.5rem;
+    font-size: ${fontSizes.sizeMd};
     width: 100%;
     color: ${colors.white};
     outline: none ;
@@ -81,6 +80,7 @@ export const FormTextarea = styled.textarea`
     border: 0.1rem solid ${colors.buttonTextHover};
     padding: 1rem;
     color: ${colors.white};
+    font-size: ${fontSizes.sizeMd};
     outline: none ;
 
     &:focus {
