@@ -1,8 +1,8 @@
 const projectOne = {
-  img: require("../../assets/images/desk.jpg"),
-  title: "Project number one",
+  img: require("../../assets/images/portfolio.png"),
+  title: "Portfolio",
   description:
-    "Personal portfolio",
+    "Personal portfolio created to showcase my knowledge and skills."
 };
 
 export { projectOne };
