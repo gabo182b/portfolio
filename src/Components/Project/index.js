@@ -22,7 +22,7 @@ const Project = ({ img, title, description }) => {
       variants={cardVariants}
       initial="initial"
       animate="animate"
-      whileHover={{ rotate: 360 }}
+      whileHover={{ rotate: 1 }}
     >
       <ProjectImage>
         <Image src={img} alt='project-image' />
@@ -35,7 +35,7 @@ const Project = ({ img, title, description }) => {
         <LinkTag href='/' target="_blank">
           <FaEye />
         </LinkTag>
-        <LinkTag href='/' target="_blank" aria-label="Github">
+        <LinkTag href='https://github.com/gabo182b/portfolio' target="_blank" aria-label="Github">
           <FaGithub />
         </LinkTag>
       </ProjectLinks>
