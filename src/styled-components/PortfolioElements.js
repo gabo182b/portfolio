@@ -16,7 +16,6 @@ export const PortfolioContainer = styled.section`
 `
 export const Gallery = styled.div`
     height: 100%;
-    width: 60vw;
     margin: 40rem auto 50rem auto;
     padding: 10rem 0 3rem 0;
     display: grid;
