@@ -6,15 +6,17 @@ export const LinkTag = styled.a`
     opacity: 0;
     color: ${colors.secondaryColor};
     transition: all 0.5s ease-in-out;
-    font-size: ${fontSizes.sizeXl};
+    font-size: ${fontSizes.sizeXxl};
 `
 
 export const ProjectCard = styled(motion.article)`
     position: relative;
+    width: 30rem;
+    height: 30rem;
     border: 0.3rem solid ${colors.projectCardHover};
     overflow: hidden;
-    cursor: pointer;
     border-radius: 5%;
+    box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.67);
 
     &:after {
             content: '';
@@ -40,11 +42,14 @@ export const ProjectCard = styled(motion.article)`
 `
 
 export const ProjectImage = styled(motion.figure)`
+    width: 100%;
+    height: 50%;
     
 `
 
 export const Image = styled.img`
-    width: 100%; 
+    width: 100%;
+    height: 100%;
 `
 
 export const ProjectInfo = styled(motion.div)`
@@ -52,18 +57,18 @@ export const ProjectInfo = styled(motion.div)`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 1rem 0;
     color:${colors.white};
 `
 
 export const ProjectTitle = styled.h1`
     font-size: ${fontSizes.sizeMd};
-    margin: 0 0 0.5rem 0;
+    margin: 2rem 0 0 0;
 `
 
 export const ProjectDescription = styled.p`
-    font-size: ${fontSizes.sizeSm};
+    font-size: ${fontSizes.sizeSmL};
     text-align: justify;
+    margin: 2rem 0 0 0;
     width: 80%;
 `
 
