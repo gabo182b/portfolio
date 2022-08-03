@@ -16,44 +16,36 @@ export const FooterContainer = styled.footer`
         height: 8rem;
     }
 `
+
 export const FooterList = styled.ul`
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    
 `
+
 export const FooterLink = styled.li`
     list-style: none;
-    margin: 0 1rem 0 1rem;
+    margin: 0 1.5rem 0 1.5rem;
 `
 
 export const Link = styled.a`
     text-decoration: none;
-    font-size: ${fontSizes.sizeLg};
+    font-size: ${fontSizes.sizeXl};
     color: ${colors.white};
-    padding: 0;
 
     &:hover {
         filter: drop-shadow(0px 0px 4px rgb(255,255,255));        
     }
 
-    
-    
     @media ${device.xlScreen} {
         font-size: ${fontSizes.sizeXl};
     }
-
 `
 
 export const FooterTextContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  
 `
 
 export const FooterText = styled.p`
     font-size: ${fontSizes.sizeSm};
-    margin: 0.5rem 0 0.5rem 0;
     text-align: center;
 `
